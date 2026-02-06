@@ -22,7 +22,7 @@ public class AppointmentControllers {
     }
 
     @GetMapping("/{id}")
-    public Patient getAppointment(@PathVariable Long id){
+    public Patient getAppointmentById(@PathVariable Long id){
         System.out.println("Fetching Appointment with Id : "+id);
         return null;
     }
