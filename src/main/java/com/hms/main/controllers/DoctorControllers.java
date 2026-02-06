@@ -10,13 +10,13 @@ import java.util.List;
 @RequestMapping("/api/v1/doctors")
 public class DoctorControllers {
     @GetMapping
-    public List<Doctor> getAllPatients(){
+    public List<Doctor> getAllDoctor(){
         System.out.println("Fetching the doctors");
         return null;
     }
 
     @PostMapping
-    public Doctor createPatient(@RequestBody Doctor doctor){
+    public Doctor createDoctor(@RequestBody Doctor doctor){
         System.out.println("Creating doctors");
         return doctor;
     }
@@ -28,12 +28,12 @@ public class DoctorControllers {
     }
 
     @DeleteMapping("/{id}")
-    public void deletePatient(@PathVariable Long id){
+    public void deleteDoctor(@PathVariable Long id){
 
     }
 
     @PutMapping("/{id}")
-    public void updatePatient(@PathVariable Long id){
+    public void updateDoctor(@PathVariable Long id){
 
     }
 }
