@@ -10,25 +10,25 @@ import java.util.List;
 @RequestMapping("/api/v1/appointment")
 public class AppointmentControllers {
     @GetMapping
-    public List<Appointment> getAllPatients(){
+    public List<Appointment> getAllAppointment(){
         System.out.println("Fetching the Appointment");
         return null;
     }
 
     @PostMapping
-    public Appointment createPatient(@RequestBody Appointment appointment){
+    public Appointment createAppointment(@RequestBody Appointment appointment){
         System.out.println("Creating Appointment");
         return appointment;
     }
 
     @GetMapping("/{id}")
-    public Patient getPatientById(@PathVariable Long id){
+    public Patient getAppointment(@PathVariable Long id){
         System.out.println("Fetching Appointment with Id : "+id);
         return null;
     }
 
     @DeleteMapping("/{id}")
-    public void deletePatient(@PathVariable Long id){
+    public void deleteAppointment(@PathVariable Long id){
 
     }
 
