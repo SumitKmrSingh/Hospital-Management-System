@@ -7,17 +7,6 @@ import java.util.List;
 
 @Service
 public class PatientService {
-    public List<Patient> getAllPatient(){
-        try {
-            System.out.println("Into Service Layer");
-            return null;
-        }
-        catch (Exception e){
-            System.out.println("Error message : "+e.getMessage());
-            return null;
-        }
-    }
-
     public Patient getPatientById(Long id){
         try {
             return null;
@@ -30,6 +19,17 @@ public class PatientService {
 
     public Patient createPatient(Patient patient){
         try {
+            return null;
+        }
+        catch (Exception e){
+            System.out.println("Error message : "+e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Patient> getAllPatient(){
+        try {
+            System.out.println("Into Service Layer");
             return null;
         }
         catch (Exception e){

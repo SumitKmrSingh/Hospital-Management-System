@@ -19,7 +19,7 @@ public class BillService {
         }
     }
 
-    public Patient getPatientById(Long id){
+    public Bill getBillById(Long id){
         try {
             return null;
         }
@@ -29,7 +29,7 @@ public class BillService {
         }
     }
 
-    public Patient createPatient(Patient patient){
+    public Bill createBill(Bill bill){
         try {
             return null;
         }
@@ -39,7 +39,7 @@ public class BillService {
         }
     }
 
-    public void deletePatient(Long id){
+    public void deleteBill(Long id){
         try {
 
         }
@@ -49,7 +49,7 @@ public class BillService {
         }
     }
 
-    public Patient updatePatient(Long id){
+    public Patient updateBill(Long id){
         try {
             return null;
         }
