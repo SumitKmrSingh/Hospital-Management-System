@@ -2,6 +2,8 @@ package com.hms.main.controllers;
 
 import com.hms.main.models.Doctor;
 import com.hms.main.models.Patient;
+import com.hms.main.service.DoctorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -9,6 +11,10 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/doctors")
 public class DoctorControllers {
+
+    @Autowired
+    private DoctorService doctorService;
+
     @GetMapping
     public List<Doctor> getAllDoctor(){
         System.out.println("Fetching the doctors");
@@ -33,7 +39,7 @@ public class DoctorControllers {
     }
 
     @PutMapping("/{id}")
-    public void updateDoctor(@PathVariable Long id){
-
+    public void updateDoctor(@PathVariable Long id, @RequestBody Doctor doctor){
+        doctorService.updateDoctor(id, doctor);
     }
 }
